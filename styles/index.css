@@ -1,0 +1,32 @@
+/* Box Model */
+
+/* * {
+    outline: 2px solid red;
+  } 
+ */
+
+ /* Global */
+
+html {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #333;
+}
+
+ /* Topbar */
+
+.topbar {
+  position: relative;
+  top: 5em;
+} 
+
+.navbar {
+  margin: 0 auto;
+  width: 845px;
+  height: 36px;
+  display: flex;
+  background-color: rgb(128,128,128);
+  background: linear-gradient(to top left, rgb(102,102,102), rgb(94,94,94), rgb(112,112,112), rgb(128,128,128)),
+              linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,0) .2%, rgba(0,0,0,0) 99.8%, rgba(0,0,0,.2)),
+              linear-gradient(to bottom right, rgba(0,0,0,.2), rgba(0,0,0,0) 5%, rgba(0,0,0,0) 97%, rgba(0,0,0,.45));
+  border-radius: 4px;
+}
