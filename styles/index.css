@@ -2,14 +2,19 @@
 
 /* * {
     outline: 2px solid red;
-  } 
- */
+  }  */
+
 
  /* Global */
 
 html {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
  /* Topbar */
@@ -21,12 +26,34 @@ html {
 
 .navbar {
   margin: 0 auto;
-  width: 845px;
+  z-index: 1;
+  width: 980px;
   height: 36px;
   display: flex;
-  background-color: rgb(128,128,128);
-  background: linear-gradient(to top left, rgb(102,102,102), rgb(94,94,94), rgb(112,112,112), rgb(128,128,128)),
-              linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.2)),
-              linear-gradient(to bottom right, rgba(0,0,0,.2), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.45));
+  justify-content: space-around;
+  align-items: center;
+  background-color: #787878;
+  background: linear-gradient(#898989, #6d6d6d 50%, #5e5e5e 50%, #787878);
   border-radius: 4px;
+  box-shadow: rgba(0,0,0,.3) 0 1px 2px;
+  font-size: .8rem;
+} 
+
+.navbar > li {
+  height: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #444;
+  border-width: 0 1px 0 0;
+  cursor: pointer;
+} 
+
+.navbar-logo {
+  width: 18px;
+  height: 22px;
+  background-image: url(../assets/globalnav_text.svg);
+  background-position: 50% 0;
 }
