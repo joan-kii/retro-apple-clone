@@ -52,8 +52,56 @@ a {
 } 
 
 .navbar-logo {
-  width: 18px;
-  height: 22px;
-  background-image: url(../assets/globalnav_text.svg);
-  background-position: 50% 0;
+  margin-top: .6em;
+  margin-left: -2.3em;
+}
+
+.search {
+  padding: 0 1em;
+  width: fit-content;
+  display: flex;
+}
+
+.search-icon {
+  position: relative;
+  top: .5em;
+  left: .7em;
+  width: 15px;
+  height: 15px;
+}
+
+.search-icon > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.search-field {
+  position: relative;
+  margin-left: -1em;
+  padding-top: .4em;
+  padding-left: 1.8em;
+  width: 115px;
+  height: 19px;
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  background-color: rgba(255,255,255,.1);
+  box-shadow: rgba(0,0,0,0.6) 0 2px 1px inset,
+              rgba(255,255,255,0.2) 0 1px 0;
+  transition: width .5s;
+
+}
+
+.search-field:focus {
+  outline: none;
+  width: 180px;
+}
+
+/* Hero */
+
+.hero {
+  width: 1440px;
+  height: 1315px;
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") no-repeat;
 }
