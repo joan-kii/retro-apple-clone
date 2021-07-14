@@ -8,13 +8,23 @@
  /* Global */
 
 html {
-  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
   color: #333;
+}
+
+body {
+  position: relative;
+  max-height: 1472px;
+  min-height: 830px;
+  min-width: 1024px;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
  /* Topbar */
@@ -50,6 +60,11 @@ a {
   border-width: 0 1px 0 0;
   cursor: pointer;
 } 
+
+
+.navbar > li:hover {
+  background-color: #575757;
+}
 
 .navbar-logo {
   margin-top: .6em;
@@ -90,7 +105,6 @@ a {
   box-shadow: rgba(0,0,0,0.6) 0 2px 1px inset,
               rgba(255,255,255,0.2) 0 1px 0;
   transition: width .5s;
-
 }
 
 .search-field:focus {
@@ -101,7 +115,63 @@ a {
 /* Hero */
 
 .hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 292px;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-section {
+  position: absolute;
+  margin-left: -720px;
+  top: 0;
+  left: 50%;
+  bottom: 0;
   width: 1440px;
-  height: 1315px;
-  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") no-repeat;
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  margin-top: -160px;
+  padding: 50px 0;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  margin-bottom: .5em;
+  font-size: 3.7rem;
+  font-weight: lighter;
+}
+
+.text {
+  margin-bottom: .5em;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.cta-link {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.play {
+  position: relative;
+  top: 7px;
+  left: 3px;
 }
