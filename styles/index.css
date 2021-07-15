@@ -32,11 +32,11 @@ a {
 .topbar {
   position: relative;
   top: 5em;
+  z-index: 1;
 } 
 
 .navbar {
   margin: 0 auto;
-  z-index: 1;
   width: 980px;
   height: 36px;
   display: flex;
@@ -120,7 +120,7 @@ a {
   right: 0;
   bottom: 292px;
   left: 0;
-  z-index: -1;
+  cursor: pointer;
 }
 
 .hero-section {
@@ -174,4 +174,98 @@ a {
   position: relative;
   top: 7px;
   left: 3px;
+}
+
+/* Promos aside */
+
+.promos {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  height: 200px;
+}
+
+.promos > ul {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  display: flex;
+} 
+
+.promos li {
+  width: 25%;
+  height: 200px;
+}
+
+.promo-link {
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 980px;
+  height: 90px;
+  color: #6e6e6e;
+  font-size: .7rem;
+  line-height: 1.2;
+}
+
+.footer a {
+  color: #08c;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 1em 0 2.6em;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-para {
+  padding-top: 1.5em;
+  width: 49%;
+}
+
+.footer-nav {
+  padding-top: 1.5em;
+  width: 51%;
+  display: flex;
+}
+
+.footer-nav li,
+.legal-links li {
+  display: inline-block;
+  margin-left: .6em;
+  padding-left: .4em;
+  border-left: 1px solid #ccc;
+}
+
+.footer-nav li.first-footer-link,
+.legal-links li.first-legal-link {
+  border-left: none;
+}
+
+.usa {
+  width: 16px;
+  height: 12px;
+}
+
+.legal {
+  padding-top: 1.5em;
+  display: flex;
+}
+
+.legal-links {
+  display: flex;
 }
